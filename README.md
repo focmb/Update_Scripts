@@ -5,7 +5,8 @@ Dieses Repository enthält verschiedene Scripte. Jedes Script ist für die Updat
 Zur Zeit umfasst das Repository folgende Scripte:
 
 - **checkGogsVersion.sh** - Prüfung auf neue Gogs-Version (Dev-Branch) auf Github
-- **checkSeafileVersion.sh** - Prüfung auf neue Deafile-Version für den Raspberry
+- **checkSeafileVersion.sh** - Prüfung auf neue Seafile-Version für den Raspberry
+- **checkGoLanguage.sh** - Prüfung auf eine neue Version von GoLanguage für den Raspberry
 
 Alle Scripte liegen auf dem Raspberry unter:
 
@@ -15,7 +16,8 @@ und gehören dem Benutzer ***root***. Die Scripte müssen natürlich ausführbar
 
     0 */12 * * * /usr/local/bin/checkGogsVersion.sh >/dev/null 2>&1
     0 */12 * * * /usr/local/bin/checkSeafileVersion.sh >/dev/null 2>&1
+    0 */12 * * * /usr/local/bin/checkGoLanguage.sh >/dev/null 2>&1
 
-Die Scripte versenden bei Vorhandensein einer neuen Softwareversion auf dem Server eine Meldung per Pushbullet an die angegebenen Geräte. Dafür muss in dem jeweiligen Script noch der eigene **API_KEY** von Pushbullet einegtragen werden. 
+Die Scripte versenden bei Vorhandensein einer neuen Softwareversion auf dem Server eine Meldung per Pushbullet an die angegebenen Geräte. Dafür muss in dem jeweiligen Script noch der eigene **API_KEY** von Pushbullet eingetragen werden.
 
 Natürlich müssen auch die Pfade zu den lokalen Installationen entsprechend angepasst werden.
