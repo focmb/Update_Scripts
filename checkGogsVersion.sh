@@ -21,7 +21,7 @@ if [ -f "$localPath" ]
         			temp=$(echo -e "$local_version\n$online_version" | sort -V )
         			IFS=" " read -r t1 _ <<< "$temp"
         			if [ "$local_version" = "$t1" ]
-            				then curl -k -u v1VQfhdct0K1fmnrK8Qb9DKX9iw60pvI1iujw1Sxvychw: https://api.pushbullet.com/v2/pushes -d type=note -d title="Neue Gogs-Version online" -d body="Gogs-Version $online_version ist online (lokale Gos-Version: $local_version" >/dev/null 2>&1
+            				then curl -k -u API_KEY https://api.pushbullet.com/v2/pushes -d type=note -d title="Neue Gogs-Version online" -d body="Gogs-Version $online_version ist online (lokale Gos-Version: $local_version" >/dev/null 2>&1
         			fi
 		fi
 fi

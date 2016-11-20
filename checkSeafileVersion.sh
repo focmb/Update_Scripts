@@ -17,7 +17,7 @@ if [ -f /home/seafile/seafile-server-latest/seahub/seahub/settings.py ]
                                 IFS=" " read -r t1 _ <<< "$temp"
                                 if [ "$local_version" = "$t1" ]
                                         then
-                                                curl -s -k -u v1VQfhdct0K1fmnrK8Qb9DKX9iw60pvI1iujw1Sxvychw: https://api.pushbullet.com/v2/pushes -d type=note -d title="Neue Seafile-Version online" -d body="Seafile-Version $online_version ist online (lokale Seafile-Version: $local_version)" >/dev/null 2>&1
+                                                curl -s -k -u API_KEY https://api.pushbullet.com/v2/pushes -d type=note -d title="Neue Seafile-Version online" -d body="Seafile-Version $online_version ist online (lokale Seafile-Version: $local_version)" >/dev/null 2>&1
                                 fi
                 fi
 fi
