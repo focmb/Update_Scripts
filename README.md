@@ -16,4 +16,6 @@ und gehören dem Benutzer ***root***. Die Scripte müssen natürlich ausführbar
     0 */12 * * * /usr/local/bin/checkGogsVersion.sh >/dev/null 2>&1
     0 */12 * * * /usr/local/bin/checkSeafileVersion.sh >/dev/null 2>&1
 
-Die Scripte versenden bei Vorhandensein einer neuen Softwareversion auf dem Server eine Meldung per Pushbullet an die angegebenen Geräte. Dafür muss in dem jeweiligen Script noch der eigene **API_KEY** von Pushbullet einegtragen werden.  
+Die Scripte versenden bei Vorhandensein einer neuen Softwareversion auf dem Server eine Meldung per Pushbullet an die angegebenen Geräte. Dafür muss in dem jeweiligen Script noch der eigene **API_KEY** von Pushbullet einegtragen werden. 
+
+Natürlich müssen auch die Pfade zu den lokalen Installationen entsprechend angepasst werden.
