@@ -7,6 +7,7 @@ Zur Zeit umfasst das Repository folgende Scripte:
 - **checkGogsVersion.sh** - Prüfung auf neue Gogs-Version (Dev-Branch) auf Github
 - **checkSeafileVersion.sh** - Prüfung auf neue Seafile-Version für den Raspberry
 - **checkGoLanguage.sh** - Prüfung auf eine neue Version von GoLanguage für den Raspberry
+- **checkForUpdates.sh** - Prüfung auf Paketaktualisierungen für Raspbian
 
 Alle Scripte liegen auf dem Raspberry unter:
 
