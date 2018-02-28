@@ -12,7 +12,7 @@ if ! [[ ${onlineVersion:0:1} = [[:digit:]] ]]
 fi
 
 #get local version (from local webseite)
-content=$(echo -e `wget -q -O - $localURL` | grep 'Gitea Version')
+content=$(echo -e `wget -q -O - $localURL`)
 localVersion=$(echo $content | sed -e 's/^\(.*\)\(Gitea  *Version:  *[0-9\.]\{1,\}\)\( .*\)$/\2/' -e 's/Gitea  *Version:  *//')
 
 if [ "$localVersion" != "$onlineVersion" ]
