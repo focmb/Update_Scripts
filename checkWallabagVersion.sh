@@ -1,6 +1,6 @@
 #!/bin/bash
 
-localfile="/home/leitzke/Downloads/wallabag/app/config/wallabag.yml"
+localfile="/PPATH_TO/wallabag/app/config/wallabag.yml"
 
 # Get local version from wallabag.yml
 if [ -f "$localfile" ]
