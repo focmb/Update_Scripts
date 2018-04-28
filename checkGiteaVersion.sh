@@ -1,7 +1,7 @@
 #!/bin/bash
 
 repo="go-gitea/gitea"
-localURL="https://gitea.meowclown.de"
+localURL="https://gitea.DOAMAIN.de"
 
 #get online version from github repo
 onlineVersion=$(curl --silent "https://api.github.com/repos/$repo/releases/latest" |  
